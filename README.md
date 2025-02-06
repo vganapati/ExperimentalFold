@@ -12,14 +12,28 @@ This code has been tested only on monomers with OpenFold/AlphaFold 2 but can be 
 
 ## Setup & Installation
 
+Directions are specifically given for installing and running on NERSC Perlmutter.
+
 ### SFCalculator
 
-Clone this [fork]() of SFCalculator
+Clone this [fork]() of SFCalculator into your parent directory
+
+```
+export PARENT=parent-directory
+cd $PARENT
+git clone repo
+```
 
 ### OpenFold
 
-Clone this [fork]() of OpenFold
+Clone this [fork]() of OpenFold into your parent directory
 The parent folder of the OpenFold repo should be the same as the parent folder of the SFCalculator repo.
+
+```
+cd $PARENT
+git clone repo
+```
+
 See installation instructions [here]() for OpenFold on NERSC Perlmutter.
 
 ### Weights and Biases
@@ -71,8 +85,7 @@ Weights and Biases
 
 ## Evaluation
 
-
-The code trains only with R_{work} structure factors. Can evaluate on the following metrics:
+The code trains only with R_{work} structure factors. Can evaluate on the following metrics in addition to the existing OpenFold metrics:
 - R_{free} on training or validation datasets
 - R_{work} on validation and test datasets
 - R_{free} on test dataset
