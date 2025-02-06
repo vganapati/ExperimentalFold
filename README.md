@@ -19,6 +19,9 @@ export PARENT=parent-directory
 cd $PARENT
 ```
 
+NERSC Account (might be expired) for saved folders
+Active NERSC Account for running experiments
+
 ### OpenFold
 
 Clone this [fork]() of OpenFold into your parent directory
