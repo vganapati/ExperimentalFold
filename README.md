@@ -90,7 +90,8 @@ Setup an account on weights and biases for experiment tracking.
 wandb login
 ```
 ## Training
-Documentation on [training OpenFold](https://openfold.readthedocs.io/en/latest/Training_OpenFold.html)
+
+Official documentation on [training OpenFold](https://openfold.readthedocs.io/en/latest/Training_OpenFold.html)
 
 Recommended procedure for training is to start from fewer/shared nodes and scale up to more nodes.
 
